@@ -23,19 +23,19 @@ h1{font-size:22px;margin:0} .muted{color:var(--muted)} .sm{font-size:12px}
 .alerts{display:flex;flex-direction:column;gap:6px} .al{background:var(--card);border:1px solid var(--line);border-left:5px solid;border-radius:8px;padding:9px 12px;font-size:14px}
 .al.red{border-left-color:var(--warn)} .al.yel{border-left-color:var(--yel)} .al.green{border-left-color:var(--accent)}
 .grow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px} @media (max-width:900px){.grow{grid-template-columns:repeat(2,1fr)}} @media (max-width:480px){.grow{grid-template-columns:1fr}}
-.g{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;min-width:0}
-.gh{display:flex;justify-content:space-between;align-items:center;gap:6px} .gh>span{display:flex;align-items:center;gap:2px;white-space:nowrap}
-.gk{display:grid;grid-template-columns:1fr 1.4fr;gap:10px} .gk .big{font-size:28px;line-height:1.15;font-variant-numeric:tabular-nums}
+.g{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;gap:14px;min-width:0} .g:hover{border-color:color-mix(in srgb,var(--accent) 40%,var(--line))} .sub{font-size:12px;color:var(--muted);margin-top:2px}
+.gh{display:flex;justify-content:space-between;align-items:flex-start;gap:6px} .gh b{font-size:16px} .gh>span{display:flex;align-items:center;gap:2px;white-space:nowrap}
+.gk{display:grid;grid-template-columns:1fr 1.4fr;gap:12px} .gk .big{font-size:32px;line-height:1.1;font-weight:700;font-variant-numeric:tabular-nums;margin-top:4px;letter-spacing:-.5px} .gk .label{display:flex;align-items:center;gap:6px;font-size:12px} .dp{font-size:11px;font-weight:600;padding:1px 7px;border-radius:999px;background:color-mix(in srgb,var(--muted) 18%,transparent);color:var(--muted);font-variant-numeric:tabular-nums} .dp.up{background:color-mix(in srgb,var(--accent) 18%,transparent);color:var(--accent)}
 .dl{font-size:12px;font-weight:500;margin-top:2px} .up{color:var(--accent)}
-.mini{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);padding-top:8px;font-size:11px;color:var(--muted);text-align:center}
-.mini span{display:block;font-size:15px;color:var(--fg);font-weight:600;font-variant-numeric:tabular-nums} .mini div+div{border-left:1px solid var(--line)} .m4{grid-template-columns:repeat(4,1fr)} .trend{display:grid;grid-template-columns:96px 1fr;gap:10px;align-items:center} .spark{display:flex;align-items:flex-end;gap:3px;height:26px} .spark i{flex:1;background:var(--accent,#4fd1a5);border-radius:2px;opacity:.85} .pgs.two{flex-direction:row;gap:14px} .pgs.two .pg{flex:1;grid-template-columns:auto 1fr}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);background:color-mix(in srgb,var(--fg) 4%,transparent);border-radius:10px;padding:10px 4px;font-size:11px;color:var(--muted);text-align:center}
+.mini span{display:block;font-size:15px;color:var(--fg);font-weight:600;font-variant-numeric:tabular-nums} .mini div+div{border-left:1px solid color-mix(in srgb,var(--line) 70%,transparent)} .m4{grid-template-columns:repeat(4,1fr)} .trend{display:grid;grid-template-columns:96px 1fr;gap:10px;align-items:center} .spark{display:flex;align-items:flex-end;gap:3px;height:26px} .spark i{flex:1;background:var(--accent,#4fd1a5);border-radius:2px;opacity:.85} .pgs.two{flex-direction:row;gap:14px} .pgs.two .pg{flex:1;grid-template-columns:auto 1fr}
 .prog{display:flex;align-items:center;gap:8px}
 .pgs{display:flex;flex-direction:column;gap:6px} .pg{display:grid;grid-template-columns:62px 1fr;align-items:center;gap:8px;font-size:12px;color:var(--muted);position:relative;cursor:default}
 .pg .bar{margin:0;height:7px} .pg:hover .bar{outline:1px solid var(--accent)}
 .pg:hover::after{content:attr(data-tip);position:absolute;right:0;bottom:calc(100% + 4px);background:var(--fg);color:var(--bg);padding:3px 8px;border-radius:6px;font-size:12px;white-space:nowrap;z-index:5;font-variant-numeric:tabular-nums} .prog .bar{flex:1;margin:0} .prog span{white-space:nowrap}
 .bar{height:5px;background:var(--line);border-radius:3px} .bar i{display:block;height:100%;background:var(--accent);border-radius:3px}
 a.cl{color:var(--fg);text-decoration:none} a.cl:hover{color:var(--accent)} .hot a{color:var(--fg)}
-.hot{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.audit li.bad{color:#f08a6c} .audit{margin-bottom:8px} .hot{display:flex;align-items:center;gap:8px;font-size:13px;border-top:1px solid var(--line);padding-top:10px;margin-top:auto} .hl{color:var(--muted);font-size:11px;white-space:nowrap} .ht{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .hv{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
 .sech{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px 12px} .tot{font-size:13px;color:var(--muted)} .tot b{color:var(--fg)}
 button.link{border:none;background:none;color:var(--muted);padding:0 2px;font-size:15px}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px} .label{color:var(--muted);font-size:13px} .big{font-size:22px;font-weight:600}
@@ -57,57 +57,72 @@ a.btn{padding:7px 12px;border:1px solid var(--line);border-radius:8px;color:var(
 .flash{background:var(--card);border-left:4px solid var(--run);padding:10px 12px;margin-top:12px;border-radius:6px}
 .log{font:12px/1.5 ui-monospace,monospace;color:var(--muted);overflow-x:auto;white-space:nowrap;margin-top:10px}
 details.more{margin-top:12px} details.more>summary{list-style:none;cursor:pointer;color:var(--muted);font-size:14px;padding:6px 0}
+.hd{display:flex;align-items:baseline;gap:12px}
+.kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:16px} @media (max-width:700px){.kpi{grid-template-columns:repeat(2,1fr)}}
+.k{background:var(--card);padding:16px 18px} .kv2{font-size:30px;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.5px;line-height:1.2;margin-top:2px} .kv2 small{font-size:16px;color:var(--muted);font-weight:500}
+.kd{font-size:12px;color:var(--muted);margin-top:2px} .kd.up{color:var(--accent)} .warnk .kv2{color:var(--warn)}
+.tier{margin-top:28px;display:flex;flex-direction:column;gap:0} .tier details.ch{margin-bottom:6px} .tier .body{padding-top:10px}
+table.dt{width:100%;border-collapse:collapse;font-size:13px} .dt th{text-align:left;color:var(--muted);font-weight:500;padding:6px 8px;border-bottom:1px solid var(--line)} .dt td{padding:8px;border-bottom:1px solid var(--line);vertical-align:middle} .dt .r{text-align:right;font-variant-numeric:tabular-nums}
+.dt td.ht{max-width:260px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis} .pb{display:flex;align-items:center;gap:8px;min-width:160px} .pb .bar{flex:1;margin:0} .pb span{font-size:12px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
 a{color:var(--accent)}</style></head><body>
-<h1>頻道中控台</h1><div class="muted sm">10-12 17:13 更新・唯讀版，每 5 分鐘從家裡的 Mac 更新</div>
-<div class="sech"><h2 class="sec">訂閱與觀看</h2><span class="tot">全部 訂閱 <b>186</b> <span class="up">+24</span>・觀看 <b>56,957</b> <span class="up">+4,493</span>（比昨天）</span></div><div class="grow"><div class="g"><div class="gh"><b><a class="cl" href="https://www.youtube.com/channel/UC1UUNMpD9MfJLSfJAnFhiHg/shorts" target="_blank">小Q 效率學 ↗</a></b><span class="muted sm">10-12 17:13
-</span></div>
-<div class="gk"><div><div class="label">訂閱</div><div class="big">150</div><div class="dl up">▲ 11 比昨天</div></div>
-<div><div class="label">總觀看</div><div class="big">36,505</div><div class="dl muted">&nbsp;</div></div></div>
+<div class="hd"><h1>頻道中控台</h1><span class="muted sm">10-12 17:18・每 5 分鐘更新</span></div>
+<div class="kpi">
+<div class="k"><div class="label">總訂閱</div><div class="kv2">186</div><div class="kd up">+24 比昨天</div></div>
+<div class="k"><div class="label">總觀看</div><div class="kv2">56,959</div><div class="kd up">+4,493 比昨天</div></div>
+<div class="k"><div class="label">今天發片</div><div class="kv2">7<small> / 11</small></div><div class="kd">落後 2 個頻道・自動補跑中</div></div>
+<div class="k warnk"><div class="label">AI 餘額</div><div class="kv2">NT$138</div><div class="kd">約可撐 4 天・請儲值</div></div>
+</div>
+
+<h2 class="sec">各頻道</h2><div class="grow"><div class="g"><div class="gh"><div><b><a class="cl" href="https://www.youtube.com/channel/UC1UUNMpD9MfJLSfJAnFhiHg/shorts" target="_blank">小Q 效率學 ↗</a></b></div>
+<span class="muted sm">17:18</span></div>
+<div class="gk"><div><div class="label">訂閱 <span class="dp up" title="比昨天">▲ 11</span></div><div class="big">150</div></div>
+<div><div class="label">總觀看 </div><div class="big">36,507</div></div></div>
 <div class="mini"><div><span>761</span>平均每支</div><div title="看完開頭沒滑走的比例（工作室數據，最近 20 支平均），平均看 14 秒"><span>27%</span>續看率</div><div><span>4.1</span>千觀看轉訂閱</div></div>
-<div class="sm muted">48 支公開・今天已發 4 支</div>
-<div class="pgs two"><div class="pg" data-tip="訂閱：150 / 1,000"><span>訂閱</span><div class="bar"><i style="width:15.0%"></i></div></div>
-<div class="pg" data-tip="90 天觀看：3.7 萬 / 1,000 萬"><span>90 天觀看</span><div class="bar"><i style="width:0.60%"></i></div></div></div>
-<div class="sm hot" title="Google 試算表技巧：英文名字首字大寫，一秒搞定！｜第9招 #Shorts">🔥 <a href="https://www.youtube.com/shorts/Z4tAffzSuW4" target="_blank">Google 試算表技巧：英文名字首字大寫，一秒搞定！｜第9招 #Shorts</a> <span class=muted>1,181</span></div></div><div class="g"><div class="gh"><b><a class="cl" href="https://www.youtube.com/channel/UCxYx60C2FzaJNpl5cgWvdkw/shorts" target="_blank">學長教你省 ↗</a></b><span class="muted sm">10-12 17:13
-</span></div>
-<div class="gk"><div><div class="label">訂閱</div><div class="big">7</div><div class="dl up">▲ 2 比昨天</div></div>
-<div><div class="label">總觀看</div><div class="big">13,699</div><div class="dl up">▲ 2,752 比昨天</div></div></div>
+</div><div class="g"><div class="gh"><div><b><a class="cl" href="https://www.youtube.com/channel/UCxYx60C2FzaJNpl5cgWvdkw/shorts" target="_blank">學長教你省 ↗</a></b></div>
+<span class="muted sm">17:18</span></div>
+<div class="gk"><div><div class="label">訂閱 <span class="dp up" title="比昨天">▲ 2</span></div><div class="big">7</div></div>
+<div><div class="label">總觀看 <span class="dp up" title="比昨天">▲ 2,752</span></div><div class="big">13,699</div></div></div>
 <div class="mini"><div><span>806</span>平均每支</div><div title="看完開頭沒滑走的比例（工作室數據，最近 20 支平均），平均看 15 秒"><span>28%</span>續看率</div><div><span>0.5</span>千觀看轉訂閱</div></div>
-<div class="sm muted">17 支公開・今天已發 1 支</div>
-<div class="pgs two"><div class="pg" data-tip="訂閱：7 / 1,000"><span>訂閱</span><div class="bar"><i style="width:0.7%"></i></div></div>
-<div class="pg" data-tip="90 天觀看：1.4 萬 / 1,000 萬"><span>90 天觀看</span><div class="bar"><i style="width:0.60%"></i></div></div></div>
-<div class="sm hot" title="2026年勞保生育給付申請眉角">🔥 <a href="https://www.youtube.com/shorts/lmXZzO6ScO4" target="_blank">2026年勞保生育給付申請眉角</a> <span class=muted>1,670</span></div></div><div class="g"><div class="gh"><b><a class="cl" href="https://www.youtube.com/channel/UCnzTuF7WjO4w29hE9hxdEmg/shorts" target="_blank">英文貓小餅乾 ↗</a></b><span class="muted sm">10-12 17:13
-</span></div>
-<div class="gk"><div><div class="label">訂閱</div><div class="big">28</div><div class="dl up">▲ 11 比昨天</div></div>
-<div><div class="label">總觀看</div><div class="big">5,268</div><div class="dl up">▲ 1,741 比昨天</div></div></div>
+</div><div class="g"><div class="gh"><div><b><a class="cl" href="https://www.youtube.com/channel/UCnzTuF7WjO4w29hE9hxdEmg/shorts" target="_blank">英文貓小餅乾 ↗</a></b></div>
+<span class="muted sm">17:18</span></div>
+<div class="gk"><div><div class="label">訂閱 <span class="dp up" title="比昨天">▲ 11</span></div><div class="big">28</div></div>
+<div><div class="label">總觀看 <span class="dp up" title="比昨天">▲ 1,741</span></div><div class="big">5,268</div></div></div>
 <div class="mini"><div><span>310</span>平均每支</div><div title="看完開頭沒滑走的比例（工作室數據，最近 20 支平均），平均看 30 秒"><span>35%</span>續看率</div><div><span>5.3</span>千觀看轉訂閱</div></div>
-<div class="sm muted">17 支公開・今天已發 2 支</div>
-<div class="pgs two"><div class="pg" data-tip="訂閱：28 / 1,000"><span>訂閱</span><div class="bar"><i style="width:2.8%"></i></div></div>
-<div class="pg" data-tip="90 天觀看：0.5 萬 / 1,000 萬"><span>90 天觀看</span><div class="bar"><i style="width:0.60%"></i></div></div></div>
-<div class="sm hot" title="會議超時？如何優雅打斷同事">🔥 <a href="https://www.youtube.com/shorts/g12jmc7X84I" target="_blank">會議超時？如何優雅打斷同事</a> <span class=muted>976</span></div></div><div class="g"><div class="gh"><b><a class="cl" href="https://www.youtube.com/channel/UCd7MGtlUCwa991MC2QDUrug/shorts" target="_blank">追劇一分鐘 ↗</a></b><span class="muted sm">10-12 17:13
-</span></div>
-<div class="gk"><div><div class="label">訂閱</div><div class="big">1</div><div class="dl muted">+0 比昨天</div></div>
-<div><div class="label">總觀看</div><div class="big">1,443</div><div class="dl muted">&nbsp;</div></div></div>
+</div><div class="g"><div class="gh"><div><b><a class="cl" href="https://www.youtube.com/channel/UCd7MGtlUCwa991MC2QDUrug/shorts" target="_blank">追劇一分鐘 ↗</a></b></div>
+<span class="muted sm">17:18</span></div>
+<div class="gk"><div><div class="label">訂閱 <span class="dp" title="比昨天">+0</span></div><div class="big">1</div></div>
+<div><div class="label">總觀看 </div><div class="big">1,443</div></div></div>
 <div class="mini"><div><span>240</span>平均每支</div><div title="看完開頭沒滑走的比例（工作室數據，最近 20 支平均），平均看 29 秒"><span>48%</span>續看率</div><div><span>0.7</span>千觀看轉訂閱</div></div>
-<div class="sm muted">6 支公開</div>
-<div class="pgs two"><div class="pg" data-tip="訂閱：1 / 1,000"><span>訂閱</span><div class="bar"><i style="width:0.6%"></i></div></div>
-<div class="pg" data-tip="90 天觀看：0.1 萬 / 1,000 萬"><span>90 天觀看</span><div class="bar"><i style="width:0.60%"></i></div></div></div>
-<div class="sm hot" title="重生之後，我不嫁了 EP4｜陸承川，你究竟是誰？">🔥 <a href="https://www.youtube.com/shorts/Ka-kcVZ_CaY" target="_blank">重生之後，我不嫁了 EP4｜陸承川，你究竟是誰？</a> <span class=muted>421</span></div></div><div class="g"><div class="gh"><b><a class="cl" href="https://www.youtube.com/channel/UCg-S6Ig-tagMgO1KSuabgUA/shorts" target="_blank">城市暗巷 YouTube ↗</a></b><span class="muted sm">10-12 17:13
-</span></div>
-<div class="gk"><div><div class="label">訂閱</div><div class="big">0</div><div class="dl muted">&nbsp;</div></div>
-<div><div class="label">總觀看</div><div class="big">42</div><div class="dl muted">&nbsp;</div></div></div>
+</div><div class="g"><div class="gh"><div><b><a class="cl" href="https://www.youtube.com/channel/UCg-S6Ig-tagMgO1KSuabgUA/shorts" target="_blank">城市暗巷 YouTube ↗</a></b></div>
+<span class="muted sm">17:18</span></div>
+<div class="gk"><div><div class="label">訂閱 </div><div class="big">0</div></div>
+<div><div class="label">總觀看 </div><div class="big">42</div></div></div>
 <div class="mini"><div><span>8</span>平均每支</div><div title="看完開頭沒滑走的比例（工作室數據，最近 20 支平均）"><span>—</span>續看率</div><div><span>—</span>千觀看轉訂閱</div></div>
-<div class="sm muted">5 支公開</div>
-<div class="pgs two"><div class="pg" data-tip="訂閱：0 / 1,000"><span>訂閱</span><div class="bar"><i style="width:0.6%"></i></div></div>
-<div class="pg" data-tip="90 天觀看：0.0 萬 / 1,000 萬"><span>90 天觀看</span><div class="bar"><i style="width:0.60%"></i></div></div></div>
-<div class="sm hot" title="Hello Kitty 玩偶裡藏著什麼？｜Hello Kitty 藏屍案 #Shorts">🔥 <a href="https://www.youtube.com/shorts/wXDFGuJaJdw" target="_blank">Hello Kitty 玩偶裡藏著什麼？｜Hello Kitty 藏屍案 #Shorts</a> <span class=muted>34</span></div></div><div class="g"><div class="gh"><b><a class="cl" href="https://studio.firstory.me" target="_blank">🎙️ 城市暗巷 Podcast ↗</a></b><span class="muted sm">10-12 02:15</span></div>
-<div class="gk"><div><div class="label">粉絲</div><div class="big">0</div><div class="dl muted">—</div></div>
-<div><div class="label">總播放</div><div class="big">30</div><div class="dl muted">—</div></div></div>
+</div><div class="g"><div class="gh"><div><b><a class="cl" href="https://studio.firstory.me" target="_blank">🎙️ 城市暗巷 Podcast ↗</a></b></div><span class="muted sm">10-12 02:15</span></div>
+<div class="gk"><div><div class="label">粉絲 </div><div class="big">0</div></div>
+<div><div class="label">總播放 </div><div class="big">30</div></div></div>
 <div class="mini"><div><span>8</span>集已發布</div><div><span>4</span>平均每集</div><div><span>0</span>最近 7 天</div></div>
-<div class="pgs two"><div class="pg" data-tip="廣告收入：NT$0 / 成本 120"><span>廣告收入</span><div class="bar"><i style="width:0.6%"></i></div></div>
-<div class="pg" data-tip="平台：Spotify（Apple 上架中）"><span>平台</span><div class="bar"><i style="width:33%"></i></div></div></div>
-<div class="sm hot">🔥 Ep2. 蔡天鳳碎屍案 <span class=muted>11 次</span></div></div></div>
-<div class="muted sm" style="margin-top:6px">營利門檻：訂閱 1,000＋90 天 Shorts 觀看 1,000 萬（或長影片 4,000 小時）｜初階：訂閱 500＋Shorts 300 萬</div>
-<h2 class="sec">頻道教練</h2><div class="al green" style="margin-bottom:8px">🧑‍🏫 各頻道轉換率差異巨大，小Q與Biscuit需擴大優勢，Ashen與Drama需強化開場鉤子以提高觸及。 <span class="muted sm">（2026-10-12 16:40）</span></div><details class="ch"><summary><span class="st ok pill">加碼</span>
+</div></div>
+<div class="tier">
+<details class="ch audit"><summary><b>🩺 自我檢查</b><span class="muted nx">🟡 3 個狀況</span><span class="muted sm" style="margin-left:auto">17:17 檢查・每 5 分鐘</span></summary>
+<div class="body sm"><ul><li class="">小Q：昨天沒有觀看紀錄，「比昨天」會是空的</li><li class="">追劇一分鐘：昨天沒有觀看紀錄，「比昨天」會是空的</li><li class="">城市暗巷 3 支上傳失敗待重傳（Ep5、Ep6），每天 15:10 自動重試</li></ul></div></details>
+<details class="ch"><summary><b>📈 營利進度・熱門影片</b><span class="muted nx">每個頻道離營利門檻多遠</span></summary><div class="body"><table class="dt"><tr><th>頻道</th><th class="r">公開</th><th class="r">今天</th><th>訂閱（營利 1,000）</th><th>90 天觀看（營利 1,000 萬）</th><th>最熱門</th></tr><tr><td><b>小Q 效率學</b></td><td class="r">48</td><td class="r">4</td>
+<td><div class="pb"><div class="bar"><i style="width:15.0%"></i></div><span>150 / 1,000</span></div></td>
+<td><div class="pb"><div class="bar"><i style="width:0.60%"></i></div><span>3.7 / 1,000 萬</span></div></td>
+<td class="ht" title="Google 試算表技巧：英文名字首字大寫，一秒搞定！｜第9招 #Shorts"><a href="https://www.youtube.com/shorts/Z4tAffzSuW4" target="_blank">Google 試算表技巧：英文名字首字大寫，一秒搞定！｜第9招 #Shorts</a> <span class="muted">1,181</span></td></tr><tr><td><b>學長教你省</b></td><td class="r">17</td><td class="r">1</td>
+<td><div class="pb"><div class="bar"><i style="width:0.7%"></i></div><span>7 / 1,000</span></div></td>
+<td><div class="pb"><div class="bar"><i style="width:0.60%"></i></div><span>1.4 / 1,000 萬</span></div></td>
+<td class="ht" title="2026年勞保生育給付申請眉角"><a href="https://www.youtube.com/shorts/lmXZzO6ScO4" target="_blank">2026年勞保生育給付申請眉角</a> <span class="muted">1,670</span></td></tr><tr><td><b>英文貓小餅乾</b></td><td class="r">17</td><td class="r">2</td>
+<td><div class="pb"><div class="bar"><i style="width:2.8%"></i></div><span>28 / 1,000</span></div></td>
+<td><div class="pb"><div class="bar"><i style="width:0.60%"></i></div><span>0.5 / 1,000 萬</span></div></td>
+<td class="ht" title="會議超時？如何優雅打斷同事"><a href="https://www.youtube.com/shorts/g12jmc7X84I" target="_blank">會議超時？如何優雅打斷同事</a> <span class="muted">976</span></td></tr><tr><td><b>追劇一分鐘</b></td><td class="r">6</td><td class="r">—</td>
+<td><div class="pb"><div class="bar"><i style="width:0.6%"></i></div><span>1 / 1,000</span></div></td>
+<td><div class="pb"><div class="bar"><i style="width:0.60%"></i></div><span>0.1 / 1,000 萬</span></div></td>
+<td class="ht" title="重生之後，我不嫁了 EP4｜陸承川，你究竟是誰？"><a href="https://www.youtube.com/shorts/Ka-kcVZ_CaY" target="_blank">重生之後，我不嫁了 EP4｜陸承川，你究竟是誰？</a> <span class="muted">421</span></td></tr><tr><td><b>城市暗巷 YouTube</b></td><td class="r">5</td><td class="r">—</td>
+<td><div class="pb"><div class="bar"><i style="width:0.6%"></i></div><span>0 / 1,000</span></div></td>
+<td><div class="pb"><div class="bar"><i style="width:0.60%"></i></div><span>0.0 / 1,000 萬</span></div></td>
+<td class="ht" title="Hello Kitty 玩偶裡藏著什麼？｜Hello Kitty 藏屍案 #Shorts"><a href="https://www.youtube.com/shorts/wXDFGuJaJdw" target="_blank">Hello Kitty 玩偶裡藏著什麼？｜Hello Kitty 藏屍案 #Shorts</a> <span class="muted">34</span></td></tr><tr><td><b>🎙️ 城市暗巷 Podcast</b></td><td class="r">8</td><td class="r">—</td><td colspan=2><div class="pb"><div class="bar"><i style="width:0.6%"></i></div><span>廣告收入 NT$0 / 成本 120</span></div></td><td class="ht">Ep2. 蔡天鳳碎屍案 <span class=muted>11 次</span></td></tr></table><div class="muted sm" style="margin-top:6px">營利門檻：訂閱 1,000＋90 天 Shorts 觀看 1,000 萬（或長影片 4,000 小時）｜初階：訂閱 500＋Shorts 300 萬</div></div></details>
+<details class="ch"><summary><b>🧑‍🏫 頻道教練</b><span class="muted nx">各頻道轉換率差異巨大，小Q與Biscuit需擴大優勢，Ashen與Drama需強</span></summary><div class="body"><div class="al green" style="margin-bottom:8px">🧑‍🏫 各頻道轉換率差異巨大，小Q與Biscuit需擴大優勢，Ashen與Drama需強化開場鉤子以提高觸及。 <span class="muted sm">（2026-10-12 16:40）</span></div><details class="ch"><summary><span class="st ok pill">加碼</span>
 <b>小Q</b><span class="muted nx">Punch開場勝出，全面採用</span><span class="sm up" style="margin-left:auto">🤖 已自動調整 3 項</span></summary>
 <div class="body"><p class="sm">Punch開場續看率29.9%遠高於Classic的24.6%，已驗證有效。轉換率優於Ashen，建議維持產能。</p><div class="sm"><b>建議</b><ul><li>全面採用Punch開場風格，移除Classic風格影片</li><li>將『快捷鍵與小技巧』比重提升至50%，這是目前最強吸粉類別</li><li>學習Biscuit的互動技巧，結尾加入『留言告訴我你最常用哪個函數』以提高互動</li></ul><b>已自動套用</b><ul><li>題材：多做 快捷鍵與小技巧、職場情境應用；暫停 格式與美化、資料整理</li><li>寫稿提醒：開頭 3 秒直接展示最終成果，結尾務必加入互動問題：『留言告訴我你最常卡在哪個函數？』並邀請訂閱。</li><li>標題提醒：標題必須包含『一秒解決』或『不用背公式』，並於結尾加上 #Shorts。</li><li>想加到每天 6 集，但 AI Studio 餘額只夠 4 天，先不加</li></ul>
 <b>下週小實驗</b>：測試結尾詢問觀眾最常用的函數，觀察留言數是否提升。</div></div></details><details class="ch"><summary><span class="st ok pill">維持</span>
@@ -119,9 +134,8 @@ a{color:var(--accent)}</style></head><body>
 <b>下週小實驗</b>：嘗試在標題加入誇張的職場焦慮詞彙（如：被開除、被誤解），對比觀看數。</div></div></details><details class="ch"><summary><span class="st run pill">觀察</span>
 <b>追劇一分鐘</b><span class="muted nx">續看率極高，穩定每日產出</span><span class="sm up" style="margin-left:auto">🤖 已自動調整 2 項</span></summary>
 <div class="body"><p class="sm">續看率48.1%為全頻道最高，代表內容極具吸引力。目前公開支數僅6支，需累積至15支以上再做調整。</p><div class="sm"><b>建議</b><ul><li>保持每日1集，維持連續劇熱度</li><li>在留言區置頂『劇情回顧』，降低新觀眾進入門檻</li><li>確保每集開頭快速前情提要，維持高續看率</li></ul><b>已自動套用</b><ul><li>想改成每 1 天一集，但會超過預算，先不改</li><li>寫稿提醒：結尾必須留下極強懸念，例如：『下一集，秘密即將揭曉，點訂閱才看得到！』</li></ul>
-<b>下週小實驗</b>：嘗試更換更具視覺衝擊的封面圖，觀察點擊率變化。</div></div></details>
-<h2 class="sec">要處理的事</h2><div class="top"><div class="alerts"><div class="al red">AI Studio 餘額 NT$138，照最近花法只夠約 4 天 → 請儲值</div><div class="al yel">ElevenLabs 字數照目前速度約 10/15 用完（31,594/40,000，10/30 才重置）；用完後 Podcast 和部分頻道會配音失敗 → 需要升級方案或減量</div><div class="al yel">學長教你省：今天應該已發 2 集，只公開 1 集 → 🤖 已排入自動補跑（前後 15 分鐘沒排程、Chrome 空出來就跑）</div><div class="al yel">小Q 60 秒效率學：今天應該已發 4 集，只公開 3 集 → 🤖 已排入自動補跑（前後 15 分鐘沒排程、Chrome 空出來就跑）</div></div><div class="stat"><div class="label">AI Studio 餘額</div><div class="big">NT$138</div><div class="muted sm">每天約 NT$36・約可撐 4 天</div></div></div>
-<h2 class="sec">各頻道</h2><details class="ch"><summary><span class="dot bad"></span><b>小Q 60 秒效率學</b>
+<b>下週小實驗</b>：嘗試更換更具視覺衝擊的封面圖，觀察點擊率變化。</div></div></details></div></details>
+<details class="ch"><summary><b>⚙️ 排程與補跑</b><span class="muted nx">3 則提醒</span></summary><div class="body"><div class="alerts"><div class="al red">AI Studio 餘額 NT$138，照最近花法只夠約 4 天 → 請儲值</div><div class="al yel">ElevenLabs 字數照目前速度約 10/15 用完（31,594/40,000，10/30 才重置）；用完後 Podcast 和部分頻道會配音失敗 → 需要升級方案或減量</div><div class="al yel">學長教你省：今天應該已發 2 集，只公開 1 集 → 🤖 已排入自動補跑（前後 15 分鐘沒排程、Chrome 空出來就跑）</div><div class="al yel">小Q 60 秒效率學：今天應該已發 4 集，只公開 3 集 → 🤖 已排入自動補跑（前後 15 分鐘沒排程、Chrome 空出來就跑）</div></div><details class="ch"><summary><span class="dot bad"></span><b>小Q 60 秒效率學</b>
 <span class="st bad">落後</span><span class="num">今天 3/5</span><span class="muted nx">下一集 19:00</span>
 </summary>
 <div class="body"><div class="kv"><span>累計公開 56 集</span><span>題目庫 10 題</span>
@@ -151,8 +165,8 @@ a{color:var(--accent)}</style></head><body>
 <div class="body"><div class="kv"><span>累計公開 5 集</span>
 <span>時段 15:10</span></div><ul><li>Ep5 預告 — 上傳失敗</li><li>Ep6 完整版 — 上傳失敗</li><li>Ep6 預告 — 上傳失敗</li></ul>
 <div class="row"></div>
-</div></details>
-<h2 class="sec">Podcast</h2><div class="card"><div class="gh"><b>🎙️ 城市暗巷（Firstory）</b>
+</div></details></div></details>
+<details class="ch"><summary><b>🎙️ Podcast 製作</b></summary><div class="body"><div class="card"><div class="gh"><b>🎙️ 城市暗巷（Firstory）</b>
 <span class="muted sm">下次自動製作 10/16（Fri）20:00・每週 1 集</span></div>
 <div class="al green" style="margin-top:8px">🧑‍🏫 目前流量極低（平均每集4次），建議將Podcast連結放入YouTube Shorts留言區置頂，並在影片結尾口頭引導，觀察至10/26。</div>
 <div class="kv"><span>已排到第 9 集</span><span>選題還剩 5 個</span>
@@ -162,10 +176,10 @@ a{color:var(--accent)}</style></head><body>
 <div class="row">
 <a class="btn" href="https://claude.ai/artifact/3vo6L17dzvsnjzdEYdsnbM" target="_blank">打開審音台 ↗</a>
 <a class="btn" href="https://studio.firstory.me" target="_blank">Firstory 後台 ↗</a></div>
-<div class="muted sm" style="margin-top:6px">由 Claude 排程任務製作；上架 Firstory 存草稿後，請試聽再跟 Claude 說「發布第 N 集」</div></div>
-<details class="more"><summary>▸ 花費、訂閱、觀看目標</summary><div class="cards"><div class="card"><div class="label">AI Studio 餘額</div><div class="value">NT$138</div><div class="sub">更新於 2026-10-12 16:56</div></div><div class="card"><div class="label">本月實際扣款（AI Studio）</div><div class="value">NT$538</div><div class="sub">平均每天 NT$44.8・估算只有 NT$426.2</div></div><div class="card"><div class="label">ElevenLabs 本月字數</div><div class="value">31,594 / 40,000</div><div class="sub">剩 8,406 字，10/30 重置</div></div><div class="card"><div class="label">訂閱數（營利目標 1,000）</div><div class="value">149</div><div class="sub"><div class="bar"><i style="width:14.9%"></i></div>還差 851 人</div></div><div class="card"><div class="label">總觀看次數（目標 1,000 萬）</div><div class="value">18,359</div><div class="sub"><div class="bar"><i style="width:0.50%"></i></div>0.184%・還差 9,981,641・數據 2026-10-12</div></div></div>
-</details>
-<details class="more"><summary>▸ 用量明細與影片表現</summary><h2>本月各頻道扣款</h2><div class="wrap"><table><thead><tr><th>頻道</th><th class="num">Gemini token</th>
+<div class="muted sm" style="margin-top:6px">由 Claude 排程任務製作；上架 Firstory 存草稿後，請試聽再跟 Claude 說「發布第 N 集」</div></div></div></details>
+<details class="ch"><summary><b>💰 花費與目標</b></summary><div class="body"><div class="cards"><div class="card"><div class="label">AI Studio 餘額</div><div class="value">NT$138</div><div class="sub">更新於 2026-10-12 16:56</div></div><div class="card"><div class="label">本月實際扣款（AI Studio）</div><div class="value">NT$538</div><div class="sub">平均每天 NT$44.8・估算只有 NT$426.2</div></div><div class="card"><div class="label">ElevenLabs 本月字數</div><div class="value">31,594 / 40,000</div><div class="sub">剩 8,406 字，10/30 重置</div></div><div class="card"><div class="label">訂閱數（營利目標 1,000）</div><div class="value">149</div><div class="sub"><div class="bar"><i style="width:14.9%"></i></div>還差 851 人</div></div><div class="card"><div class="label">總觀看次數（目標 1,000 萬）</div><div class="value">18,359</div><div class="sub"><div class="bar"><i style="width:0.50%"></i></div>0.184%・還差 9,981,641・數據 2026-10-12</div></div></div>
+</div></details>
+<details class="ch"><summary><b>🧾 用量明細</b></summary><div class="body"><h2>本月各頻道扣款</h2><div class="wrap"><table><thead><tr><th>頻道</th><th class="num">Gemini token</th>
 <th class="num">ElevenLabs 字數</th><th class="num">Veo 影片</th><th class="num">估算花費</th><th class="num">占比</th><th class="num">分攤實際扣款</th></tr></thead>
 <tbody><tr><td>追劇一分鐘</td><td class="num">256,832</td><td class="num">2,033</td><td class="num">—</td><td class="num">NT$154.8</td><td class="num">36%</td><td class="num">NT$195</td></tr><tr><td>小Q 60 秒效率學</td><td class="num">2,760,638</td><td class="num">13,344</td><td class="num">—</td><td class="num">NT$141.1</td><td class="num">33%</td><td class="num">NT$178</td></tr><tr><td>英文貓小餅乾</td><td class="num">524,898</td><td class="num">0</td><td class="num">—</td><td class="num">NT$63.2</td><td class="num">15%</td><td class="num">NT$80</td></tr><tr><td>學長教你省</td><td class="num">870,532</td><td class="num">7,893</td><td class="num">—</td><td class="num">NT$47.9</td><td class="num">11%</td><td class="num">NT$60</td></tr><tr><td>動態短劇</td><td class="num">0</td><td class="num">0</td><td class="num">4 秒</td><td class="num">NT$19.2</td><td class="num">5%</td><td class="num">NT$24</td></tr></tbody></table></div>
 <div class="muted" style="margin-top:6px">AI Studio 只有一個總餘額、看不到是哪個頻道花的，所以「分攤實際扣款」= 本月實際扣款 × 各頻道估算占比。實際扣款比估算高很多時，通常是價格表（PRICES）少算了某個模型，或有程式沒把用量寫進 用量.log。</div>
@@ -175,5 +189,6 @@ a{color:var(--accent)}</style></head><body>
 <div class="muted" style="margin-top:6px">估算花費 = 每次呼叫的 token × Gemini 官方價格（dashboard.py 的 PRICES）。AI Studio 帳單會延遲好幾小時才扣，所以餘額不會馬上變少。ElevenLabs 是月費制（約 NT$160／月），字數不另外扣錢。</div>
 <h2>影片表現（目前只有小Q 有數據）</h2><div class="wrap"><table><thead><tr><th>影片</th><th>類別</th><th class="num">觀看</th><th class="num">帶來訂閱</th></tr></thead>
 <tbody><tr><td>UPPER 英文全部轉為大寫</td><td>公式函數</td><td class="num">1,083</td><td class="num">+4</td></tr><tr><td>NETWORKDAYS 計算工作日</td><td>公式函數</td><td class="num">1,070</td><td class="num">+1</td></tr><tr><td>Google 試算表加總，自動計算未結案</td><td>公式函數</td><td class="num">1,028</td><td class="num">+3</td></tr><tr><td>DATEDIF 計算年資與工齡</td><td>職場情境應用</td><td class="num">995</td><td class="num">+2</td></tr><tr><td>TRIM 函數一秒清除多餘空格</td><td>資料整理</td><td class="num">992</td><td class="num">+0</td></tr><tr><td>下拉式選單，一秒製作選項</td><td>格式與美化</td><td class="num">991</td><td class="num">+0</td></tr><tr><td>Google sheets 教學，自動計算工作天數</td><td>公式函數</td><td class="num">988</td><td class="num">+0</td></tr><tr><td>Google Sheet 製作專案進度倒數</td><td>職場情境應用</td><td class="num">982</td><td class="num">+0</td></tr><tr><td>ARRAYFORMULA 自動填充公式不遺漏</td><td>公式函數</td><td class="num">951</td><td class="num">+5</td></tr><tr><td>Google spreadsheet 教學：整欄複製</td><td>快捷鍵與小技巧</td><td class="num">941</td><td class="num">+0</td></tr><tr><td>Google Sheet 下拉選單，自動關聯內容</td><td>資料整理</td><td class="num">934</td><td class="num">+1</td></tr><tr><td>MID 函數，快速抓取特定字元</td><td>公式函數</td><td class="num">929</td><td class="num">+5</td></tr><tr><td>Google Sheet 記帳，自動計算匯率換算</td><td>職場情境應用</td><td class="num">783</td><td class="num">+3</td></tr><tr><td>試算表記帳，自動計算餘額</td><td>職場情境應用</td><td class="num">769</td><td class="num">+0</td></tr><tr><td>XLOOKUP 快速查資料</td><td>公式函數</td><td class="num">685</td><td class="num">+3</td></tr><tr><td>ROUND 函數快速取整數</td><td>公式函數</td><td class="num">673</td><td class="num">+1</td></tr><tr><td>函數應用，快速統計資料</td><td>公式函數</td><td class="num">658</td><td class="num">+0</td></tr><tr><td>AVERAGE 快速計算平均值</td><td>公式函數</td><td class="num">633</td><td class="num">+1</td></tr><tr><td>一秒計算逾期天數</td><td>職場情境應用</td><td class="num">482</td><td class="num">+4</td></tr><tr><td>Google 試算表記帳，一鍵變貨幣格式</td><td>格式與美化</td><td class="num">476</td><td class="num">+0</td></tr><tr><td>IFS 函數，多條件判斷自動評分</td><td>公式函數</td><td class="num">359</td><td class="num">+0</td></tr><tr><td>插入核取方塊做待辦清單</td><td>職場情境應用</td><td class="num">305</td><td class="num">+0</td></tr><tr><td>TEXTJOIN 函數，快速合併多欄文字</td><td>公式函數</td><td class="num">280</td><td class="num">+1</td></tr><tr><td>SPARKLINE 製作迷你圖</td><td>資料整理</td><td class="num">207</td><td class="num">+0</td></tr><tr><td>Google Sheet 篩選器，快速標記項目</td><td>公式函數</td><td class="num">157</td><td class="num">+0</td></tr><tr><td>MAX 與 MIN 抓出極值</td><td>公式函數</td><td class="num">7</td><td class="num">+0</td></tr><tr><td>試算表教學｜Google 試算表進度條：不用背公式，一秒解決！｜第35招 #Shorts</td><td>未分類</td><td class="num">1</td><td class="num">+0</td></tr><tr><td>google sheet 取代文字｜Google 試算表取代文字，不用背公式！一秒解決重複字眼｜第52招 #Shorts</td><td>未分類</td><td class="num">0</td><td class="num">+0</td></tr><tr><td>google試算表製作教學｜Google 試算表拆分儲存格，一秒解決！不用背公式｜第43招 #Shorts</td><td>未分類</td><td class="num">0</td><td class="num">+0</td></tr><tr><td>2026 10 07 Google試算表教學：自動填色區隔資料</td><td>未分類</td><td class="num">0</td><td class="num">+0</td></tr></tbody></table></div>
-</details>
+</div></details>
+</div>
 </body></html>
